@@ -13,7 +13,7 @@ if(production) {
 module.exports = {
   "PRODUCTION": production,
   "DATABASE_URL": process.env.DATABASE_URL || "postgres://localhost:5432/bustabitdb",
-  "BIP32_DERIVED": process.env.BIP32_DERIVED_KEY,
+  "BIP32_DERIVED": process.env.BIP32_DERIVED_KEY || "xprv9x2A9LBz1f1Uf83KJsvGWBeipoezD5WeCujMdyHtpMSXw9MuKah3uADFDTsrWBK9daMS8yega5SaqsDYPFPWGfSiqKZuZkeABwSjEin4T1E",
   "AWS_SES_KEY": process.env.AWS_SES_KEY,
   "AWS_SES_SECRET": process.env.AWS_SES_SECRET,
   "CONTACT_EMAIL": process.env.CONTACT_EMAIL || "ryan@moneypot.com",
